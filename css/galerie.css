@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+img{
+  width: 15%;
+  padding: 5px;
+}
+.logo:hover{
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin {
+	100% {
+	 -moz-transform: rotate(360deg);
+	 }
+	}
+@-webkit-keyframes spin
+{
+	100% {
+		-webkit-transform: rotate(360deg);
+		}
+	}
+@keyframes spin {
+ 100% {
+  -webkit-transform: rotate(360deg);
+  transform:rotate(360deg);
+  }
+}

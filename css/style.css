@@ -1,0 +1,63 @@
+/*========== CSS ==========*/
+
+/*===== PAGE DE DEPART =====*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/*== TEXTE ==*/
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: orange;
+}
+span{
+    border: solid 5px orange;
+    padding: 20px;
+}
+/*== IMAGE MILIEU ==*/
+.logo1{
+  margin-left: 825px;
+  margin-top: 60px;
+  width: 210px;
+  height: 150px;
+}
+/*== ANIMATION IMAGE A DROITE==*/
+.logo{
+  width: 15%;
+  padding: 5px;
+}
+.logo:hover{
+  -webkit-animation:spin 1s linear infinite;
+  -moz-animation:spin 1s linear infinite;
+  animation:spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+	100% {
+	 -moz-transform: rotate(360deg);
+	 }
+	}
+@-webkit-keyframes spin
+{
+	100% {
+		-webkit-transform: rotate(360deg);
+		}
+	}
+@keyframes spin {
+ 100% {
+  -webkit-transform: rotate(360deg);
+  transform:rotate(360deg);
+  }
+}
+/*== ANIMATION VIDEO ==*/
+video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
